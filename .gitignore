@@ -1,0 +1,11 @@
+#untracked folder
+
+node_modules/
+platforms/
+build/
+.sass_cache/
+
+#untracked files
+
+npm-debug.log
+.DS_Store

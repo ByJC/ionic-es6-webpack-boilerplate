@@ -1,0 +1,14 @@
+<ion-view>
+    <ion-nav-title>{{postCtrl.post.title}}</ion-nav-title>
+    <ion-content>
+        <ion-spinner ng-if="!postCtrl.item"></ion-spinner>
+        <div class="list card" ng-if="postCtrl.item" style="margin: 0;">
+            <div class="item item-avatar">
+                <h2>{{::postCtrl.item.name}}</h2>
+            </div>
+            <div class="item item-body">
+                <p ng-bind-html="::postCtrl.item.description"></p>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
