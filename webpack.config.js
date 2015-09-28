@@ -3,7 +3,8 @@ var path = require('path'),
     wwwPath = path.join(__dirname, 'www'),
     pkg = require('./package.json'),
     webpack = require("webpack"),
-    HtmlWebpackPlugin = require('html-webpack-plugin');
+    HtmlWebpackPlugin = require('html-webpack-plugin'),
+    prototype = require('./webpack/factory.js');
 
 module.exports = {
     entry: path.join(libPath, 'index.js'),
@@ -53,6 +54,10 @@ module.exports = {
         ]
     },
     plugins: [
+        new prototype.plugin.translation({
+           languages : ['en'],
+           output: 'locales'
+        }),
         new HtmlWebpackPlugin({
             filename: 'index.html',
             pkg: pkg,

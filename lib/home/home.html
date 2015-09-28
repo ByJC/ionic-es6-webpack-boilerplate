@@ -1,5 +1,5 @@
 <ion-view>
-    <ion-nav-title>Home</ion-nav-title>
+    <ion-nav-title>{{ 'ui.home.title' | translate }}</ion-nav-title>
     <ion-content style="background-color: #eee;">
         <ion-refresher pulling-text="Pull to refresh" on-refresh="homeCtrl.refresh()"></ion-refresher>
         <div class="list card" ng-repeat="item in homeCtrl.items track by $index" ui-sref="root.post(::{ id: $index })">
