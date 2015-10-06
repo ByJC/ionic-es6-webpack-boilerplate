@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<widget id="com.YourDomain.YourAppName" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>YourAppName</name>
+<widget id="com.byjc.alohapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>AppName</name>
     <description>
-        Your description.
+        Description
     </description>
-    <author email="youEmail@" href="yourUrl">
-        YourName
+    <author email="jeancharles.fauvin@gmail.com" href="https://github.com/ByJC">
+        Author
     </author>
     <content src="index.html" />
     <access origin="*" />
